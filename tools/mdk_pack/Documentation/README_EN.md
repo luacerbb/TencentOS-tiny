@@ -455,11 +455,9 @@ The software pack has the following features.
    Cortex-M3, Cortex-M4, Cortex-M7, Cortex-M23 and Cortex-M33 cores, allowing
    users to quickly integrate the TencentOS tiny corresponding kernel in a Keil
    project.
-
    1. The pack can automatically adapt to the kernel selected by the user and
       the arch file can be displayed automatically according to the kernel,
       thus facilitating the user's use.
-
       1. When the user checks a component, the pack will automatically prompt
          that other modules need to be checked and can be checked with one
          click using Resolve in the interface to prevent omissions.

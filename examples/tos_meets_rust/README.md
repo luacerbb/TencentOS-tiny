@@ -84,7 +84,6 @@
   新建系统环境变量 TOS_SRC_ROOT, 其值为 TencentOS Tiny 源码的绝对路径。
 
 - 基础依赖安装
-
   - ST-LINK 驱动安装，参考 [stlink](./docs/stlink.md)
 
   - CH34X 驱动安装，参考 [CH34X](./docs/ch34x.md)
@@ -95,7 +94,6 @@
 
   编译需要的 arm-none-eabi 工具链，eabi 的含义是 Embedded Application Binary Interface,
   不同发行版安装方式不一样
-
   - ubuntu
 
           sudo apt-get install -y gcc-arm-none-eabi

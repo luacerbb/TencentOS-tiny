@@ -45,7 +45,8 @@ u {
 
 html,
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
     "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.4;
   -webkit-text-size-adjust: 100%;
@@ -2214,7 +2215,8 @@ span.icon-user {
 /* Utility module CSS variable definitions */
 :root {
   --generic-border-color: rgba(0, 0, 0, 0.3);
-  --generic-box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.125),
+  --generic-box-shadow:
+    0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.125),
     0 0.125rem 0.125rem -0.125rem rgba(0, 0, 0, 0.25);
 }
 

@@ -1,7 +1,6 @@
 # 串口工具 - kermit
 
 - 安装
-
   - linux
 
           wget http://www.kermitproject.org/ftp/kermit/test/tar/x.zip

@@ -5,9 +5,7 @@
 ## 工具准备
 
 - stlink 安装
-
   - 依赖项
-
     - [cmake](https://cmake.org/download/): 下载 tar.gz 的压缩包自行安装并添加到环境变量中
     - [llvm](https://releases.llvm.org/download.html): 参考 cmake 处理
     - libusb: `brew install libusb`
@@ -40,7 +38,6 @@
           ...
 
 - CH340 驱动
-
   - macOS Mojava 10.4 或者之后的版本：无需安装
   - macOS Mojava 10.4 之后的版本：到[这里](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver)下载安装
 

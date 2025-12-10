@@ -60,15 +60,12 @@ This project can be ported to other platforms using different MCU than the ones 
 The [Porting Guide](http://stackforce.github.io/LoRaMac-doc/_p_o_r_t_i_n_g__g_u_i_d_e.html) document provides guide lines on how to port the project to other platforms.
 
 - NAMote72
-
   - [NAMote72 platform documentation](Doc/NAMote72-platform.md)
 
 - NucleoLxxx - Discovery kit
-
   - [NucleoLxxx and Discovery kit platforms documentation](Doc/NucleoLxxx-platform.md)
 
 - SKiM880B, SKiM980A, SKiM881AXL
-
   - [SKiM88xx platforms documentation](Doc/SKiM88xx-platform.md)
 
 - SAML21
@@ -95,7 +92,6 @@ This program uses the CMAC algorithm implementation
 ### 2019-07-19, V4.4.2
 
 - General
-
   1. Release based on "LoRaWAN specification 1.0.3" and "LoRaWAN Regional Parameters v1.0.3revA"
   2. Examples application refactoring plus the addition of the application status display on the serial port. (921600-8-N-1)
   3. Added new refactored application examples
@@ -134,7 +130,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2018-03-07, V4.4.1
 
 - General
-
   1. Release based on "LoRaWAN specification 1.0.2" and "LoRaWAN Regional Parameters v1.0.2rB"
   2. Added SX126x radio support.
   3. Added NucleoL073 and NucleoL152 board platforms support.
@@ -153,7 +148,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2017-09-08, V4.4.0
 
 - General
-
   1. First release based on "LoRaWAN specification 1.0.2" and "LoRaWAN Regional Parameters v1.0.2rB"
   2. This version has passed the LoRa-Alliance compliance tests for the regions shown in the below table.
   3. GitHub reported issues corrections.
@@ -171,7 +165,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2017-04-19, V4.3.2
 
 - General (Last release based on LoRaWAN specification 1.0.1)
-
   1. This version has passed EU868 and US915 LoRa-Alliance compliance tests.
   2. GitHub reported issues corrections.
   3. Added an algorithm to automatically compute the Rx windows parameters. (Window symbolTimeout and Offset from downlink expected time)
@@ -196,7 +189,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2017-02-27, V4.3.1
 
 - General
-
   1. This version has passed EU868 and US915 LoRa-Alliance compliance tests.
   2. Update the MAC layer in order to be LoRaWAN version 1.0.1 compliant (Mainly US915 bug fixes)
   3. Removed api-v3 support from the project.
@@ -223,7 +215,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2016-06-22, V4.3.0
 
 - General
-
   1. This version has passed all LoRa-Alliance compliance tests.
   2. Update the MAC layer in order to be LoRaWAN version 1.0.1 compliant
   3. Applied to all application files the certification protocol change for LoRaWAN 1.0.1 compliance tests.
@@ -261,7 +252,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2016-05-13, V4.2.0
 
 - General
-
   1. This version has passed all LoRa-Alliance compliance tests.
   2. Update STM32L1xx_HAL_Driver version to 1.5. Update related drivers and implementations accordingly.
 
@@ -299,7 +289,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2016-03-10, V4.1.0
 
 - General
-
   1. This version has passed all mandatory LoRa-Alliance compliance tests.
 
      _One of the optional tests is unsuccessful (FSK downlinks PER on Rx1 and Rx2 windows) and is currently under investigation._
@@ -338,7 +327,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2015-10-06, V3.4.1
 
 - General
-
   1. Bug fixes
 
 - LoRaWAN
@@ -349,7 +337,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2015-10-30, V3.4.0
 
 - General
-
   1. Changed all applications in order to have preprocessing definitions on top of the files and added relevant comments
   2. Applications LED control is no more done into the timer callback functions but instead on the main while loop.
   3. Added TimerStop function calls to each timer event callback.
@@ -390,7 +377,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2015-08-07, v3.3.0
 
 - General
-
   1. Added the support for LoRaWAN Class C devices.
   2. Implemented the radios errata note workarounds. SX1276 errata 2.3 "Receiver Spurious Reception of a LoRa Signal" is not yet implemented.
   3. Increased FSK SyncWord timeout value in order to listen for longer time if a down link is available or not. Makes FSK downlink more reliable.
@@ -416,7 +402,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2015-04-30, v3.2.0
 
 - General
-
   1. Updated LoRaMac implementation according to LoRaWAN R1.0 specification
   2. General cosmetics corrections
   3. Added the support of packed structures when using IAR tool chain
@@ -428,10 +413,8 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
   9. GPS: Changed the GetPosition functions to return a latitude and longitude of 0 and altitude of 65535 when no GPS fix.
 
 - LoRaWAN
-
   1. Removed support for previous LoRaMac/LoRaWAN specifications
   2. Added missing MAC commands and updated others when necessary
-
      - Corrected the Port 0 MAC commands decryption
      - Changed the way the upper layer is notified. Now it is only notified
        when all the operations are finished.
@@ -471,7 +454,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2015-01-30, v3.1.0
 
 - General
-
   1. Started to add support for CooCox CoIDE Integrated Development Environment.
      Currently only LoRaMote and SensorNode platform projects are available.
   2. Updated GCC compiler linker scripts.
@@ -517,7 +499,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2014-07-18, v3.0.0
 
 - General
-
   1. Added to Radio API the possibility to select the modem.
   2. Corrected RSSI reading formulas as well as changed the RSSI and SNR values from double to int8_t type.
   3. Changed radio callbacks events to timeout when it is a timeout event and error when it is a CRC error.
@@ -533,11 +514,9 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
       A timer interrupt could be generated while the TimerList could already be emptied.
 
 - LoRaMac
-
   1. Implemented LoRaMac specification R3.0 changes.
 
   2. MAC commands implemented
-
      - LinkCheckReq **YES**
      - LinkCheckAns **YES**
      - LinkADRReq **YES**
@@ -554,7 +533,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
      - NewChannelAns **YES**
 
   3. Features implemented
-
      - Possibility to shut-down the device **YES**
 
        Possible by issuing DutyCycleReq MAC command.
@@ -572,7 +550,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2014-06-06, v2.3.RC1
 
 - General
-
   1.  Added the support for SX1276 radio.
   2.  Radio continuous reception mode correction.
   3.  Radio driver RxDone callback function API has changed ( size parameter is no more a pointer).
@@ -591,7 +568,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
       the radio sensitivity.
   7.  Added a bootloader project for the LoRaMote and SensorNode platforms.
   8.  The LoRaMac application for Bleeper platforms now sends the Selector and LED status plus the sensors values.
-
       - The application payload for the Bleeper platforms is as follows:
 
         LoRaMac port 1:
@@ -619,7 +595,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
   16. Known bugs correction.
 
 - LoRaMac
-
   1.  MAC commands implemented
       - LinkCheckReq **YES**
       - LinkCheckAns **YES**
@@ -636,7 +611,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
       - NewChannelReq **YES** (LoRaMac specification R2.2.1)
       - NewChannelAns **YES** (LoRaMac specification R2.2.1)
   2.  Features implemented
-
       - Possibility to shut-down the device **YES**
 
         Possible by issuing DutyCycleReq MAC command.
@@ -667,9 +641,7 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2014-04-07, v2.2.0
 
 - General
-
   1.  Added IMST SK-iM880A starter kit board support to the project.
-
       - The application payload for the SK-iM880A platform is as follows:
 
       LoRaMac port 3:
@@ -689,7 +661,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2014-03-28, v2.1.0
 
 - General
-
   1. The timers and RTC management has been rewritten.
   2. Improved the UART and UP501 GPS drivers.
   3. Corrected GPIO pin names management.
@@ -722,10 +693,8 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2014-02-21, v2.0.0
 
 - General
-
   1.  The LoRaMac applications now sends the LED status plus the sensors values.
       For the LoRaMote platform the application also sends the GPS coordinates.
-
       - The application payload for the Bleeper platform is as follows:
 
         LoRaMac port 1:
@@ -767,7 +736,6 @@ Please refer to [Releases pre-certification-results](https://github.com/Lora-net
 ### 2014-01-24, v1.1.0
 
 - LoRaMac
-
   1.  MAC commands implemented
       - LinkCheckReq **NO**
       - LinkCheckAns **NO**
